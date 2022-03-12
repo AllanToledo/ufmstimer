@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta author="Allan Toledo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contador UFMS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,58 +17,61 @@
 <body>
     <div class="container">
         <span class="title">Tempo restante</span>
-        <div class="hour-card" id="4:30">
-            <span class="hour-text">
-                4:30
-            </span>
-        </div>
-        <div class="hour-card" id="4:00">
-            <span class="hour-text">
-                4:00
-            </span>
-        </div>
-        <div class="hour-card" id="3:30">
-            <span class="hour-text">
-                3:30
-            </span>
-        </div>
-        <div class="hour-card" id="3:00">
-            <span class="hour-text">
-                3:00
-            </span>
-        </div>
-        <div class="hour-card" id="2:30">
-            <span class="hour-text">
-                2:30
-            </span>
-        </div>
-        <div class="hour-card" id="2:00">
-            <span class="hour-text">
-                2:00
-            </span>
-        </div>
-        <div class="hour-card" id="1:30">
-            <span class="hour-text">
-                1:30
-            </span>
-        </div>
-        <div class="hour-card" id="1:00">
-            <span class="hour-text">
-                1:00
-            </span>
-        </div>
-        <div class="hour-card" id="0:30">
-            <span class="hour-text">
-                0:30
-            </span>
-        </div>
-        <div class="hour-card" id="0:15">
-            <span class="hour-text">
-                0:15
-            </span>
+        <div id="card-container" class="container-hour hidden">
+            <div class="hour-card" id="4:30">
+                <span class="hour-text">
+                    4:30
+                </span>
+            </div>
+            <div class="hour-card" id="4:00">
+                <span class="hour-text">
+                    4:00
+                </span>
+            </div>
+            <div class="hour-card" id="3:30">
+                <span class="hour-text">
+                    3:30
+                </span>
+            </div>
+            <div class="hour-card" id="3:00">
+                <span class="hour-text">
+                    3:00
+                </span>
+            </div>
+            <div class="hour-card" id="2:30">
+                <span class="hour-text">
+                    2:30
+                </span>
+            </div>
+            <div class="hour-card" id="2:00">
+                <span class="hour-text">
+                    2:00
+                </span>
+            </div>
+            <div class="hour-card" id="1:30">
+                <span class="hour-text">
+                    1:30
+                </span>
+            </div>
+            <div class="hour-card" id="1:00">
+                <span class="hour-text">
+                    1:00
+                </span>
+            </div>
+            <div class="hour-card" id="0:30">
+                <span class="hour-text">
+                    0:30
+                </span>
+            </div>
+            <div class="hour-card" id="0:15">
+                <span class="hour-text">
+                    0:15
+                </span>
+            </div>
         </div>
         <button class="btn-start" id="start" onclick="start();">Iniciar</button>
     </div>
+    <span id="warning" class="warning hidden">Entregue a sua prova</span>
 </body>
 
 </html>

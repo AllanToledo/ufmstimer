@@ -2,6 +2,7 @@ body {
     height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #eceff1;
@@ -17,10 +18,41 @@ body {
     box-sizing: border-box;
 }
 
+.container-hour {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    transition: .5s ease;
+}
+
+.hidden {
+    height: 0;
+    overflow: hidden;
+}
+
+.visible {
+    height: auto;
+    overflow: visible;
+}
+
 .title {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
+}
+
+.warning {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #fafafa;
+    opacity: 0.3;
 }
 
 .hour-card{

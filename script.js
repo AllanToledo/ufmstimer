@@ -13,12 +13,19 @@ function hours(time) {
     return minutes(time) * 60;
 }
 
+function showCards() {
+    cards = document.getElementById('card-container');
+    cards.classList.remove('hidden');
+    cards.classList.add('visible');
+}
+
 function start() {
+    showCards();
     hide(document.getElementById('start'));
     setTimeout(function () {
         console.log("Passou 30 minutos");
         hide(document.getElementById("4:30"));
-    }, minutes(30));
+    }, hours(0.5));
 
     setTimeout(function () {
         console.log("Passou 1 hora");
@@ -63,6 +70,9 @@ function start() {
     setTimeout(function () {
         console.log("Passou 4:30 horas");
         hide(document.getElementById("0:15"));
+        warning = document.getElementById('warning');
+        warning.classList.remove('hidden');
+        warning.classList.add('visible');
         document.body.style.backgroundColor = "#ef5350";
     }, hours(4.5));
 }
